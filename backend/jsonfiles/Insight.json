@@ -1,0 +1,360 @@
+[
+  {
+    "Table1_columns": [
+      "PROJECT STATUS"
+    ],
+    "Table1_data": [
+      {
+        "PROJECT STATUS": "GREEN"
+      }
+    ]
+  },
+  {
+    "Table2_columns": [
+      "REPORT DATE"
+    ],
+    "Table2_data": [
+      {
+        "REPORT DATE": "13th January 2024"
+      }
+    ]
+  },
+  {
+    "Table3_columns": [
+      "PROJECT DESCRIPTION"
+    ],
+    "Table3_data": [
+      {
+        "PROJECT DESCRIPTION": "Insight 2.2.0  Release"
+      },
+      {
+        "PROJECT DESCRIPTION": ""
+      }
+    ]
+  },
+  {
+    "Table4_columns": [
+      "RELEASE VERSION",
+      "CURRENT STAGE",
+      "NEXT MILESTONE"
+    ],
+    "Table4_data": [
+      {
+        "RELEASE VERSION": "2.2.0 GA",
+        "CURRENT STAGE": "Code Lock",
+        "NEXT MILESTONE": "Regression"
+      }
+    ]
+  },
+  {
+    "Table5_columns": [
+      "PHASE",
+      "STATUS",
+      "PLANNED RELEASE DATE",
+      "ACTUAL RELEASE DATE"
+    ],
+    "Table5_data": [
+      {
+        "PHASE": "DEV",
+        "STATUS": "Completed",
+        "PLANNED RELEASE DATE": "12th January 2024",
+        "ACTUAL RELEASE DATE": "17th January 2024"
+      },
+      {
+        "PHASE": "QA",
+        "STATUS": "Completed",
+        "PLANNED RELEASE DATE": "18th January 2024",
+        "ACTUAL RELEASE DATE": "18th January 2024"
+      },
+      {
+        "PHASE": "Dev& QA (Code Lock)",
+        "STATUS": "Completed",
+        "PLANNED RELEASE DATE": "18th January 2024",
+        "ACTUAL RELEASE DATE": "18th January 2024"
+      },
+      {
+        "PHASE": "Migration",
+        "STATUS": "Not-Started",
+        "PLANNED RELEASE DATE": "23rd January 2024",
+        "ACTUAL RELEASE DATE": ""
+      },
+      {
+        "PHASE": "Regression",
+        "STATUS": "Not-Started",
+        "PLANNED RELEASE DATE": "23rd January 2024",
+        "ACTUAL RELEASE DATE": ""
+      },
+      {
+        "PHASE": "IQC",
+        "STATUS": "Not-Started",
+        "PLANNED RELEASE DATE": "25th January 2024",
+        "ACTUAL RELEASE DATE": ""
+      },
+      {
+        "PHASE": "RTM",
+        "STATUS": "Not-Started",
+        "PLANNED RELEASE DATE": "29th January 2024",
+        "ACTUAL RELEASE DATE": ""
+      },
+      {
+        "PHASE": "GA Path",
+        "STATUS": "Not-Started",
+        "PLANNED RELEASE DATE": "5th February 2024",
+        "ACTUAL RELEASE DATE": ""
+      }
+    ]
+  },
+  {
+    "Table6_columns": [
+      "HIGHLIGHTS"
+    ],
+    "Table6_data": [
+      {
+        "HIGHLIGHTS": "QA completed for 2.2.0 Features. "
+      },
+      {
+        "HIGHLIGHTS": "Code lock done on Inisght Version: 2.2.0Build number: 20240118-044642"
+      },
+      {
+        "HIGHLIGHTS": "Around 61 Defects were found in QA phase."
+      },
+      {
+        "HIGHLIGHTS": ""
+      }
+    ]
+  },
+  {
+    "Table7_columns": [
+      "Feature",
+      "Status",
+      "Remarks"
+    ],
+    "Table7_data": [
+      {
+        "Feature": "Audit Log Report",
+        "Status": "Completed",
+        "Remarks": "QA Completed  "
+      },
+      {
+        "Feature": "SPT Report",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Config Alerts",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Commission Report",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Decommission Report",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Serial Number Report",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Audit Log Tableau Dashboard",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Lot Event details Tableau Dashboard",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Alarms Tableau Dashboard",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      }
+    ]
+  },
+  {
+    "Table8_columns": [
+      "SL#",
+      "Identified Risk",
+      "Status",
+      "Severity",
+      "Impact",
+      "Mitigation",
+      "Closure required by",
+      "Owner"
+    ],
+    "Table8_data": [
+      {
+        "SL#": "",
+        "Identified Risk": "",
+        "Status": "",
+        "Severity": "",
+        "Impact": "",
+        "Mitigation": "",
+        "Closure required by": "",
+        "Owner": ""
+      }
+    ]
+  },
+  {
+    "Table9_columns": [
+      "Feature",
+      "Jira ID",
+      "Description",
+      "Status",
+      "DEV Owner",
+      "Severity",
+      "ETA"
+    ],
+    "Table9_data": [
+      {
+        "Feature": "Agent Installer",
+        "Jira ID": "SPHERE-10225",
+        "Description": "2.2.0 Agent Installer : Systech services are not enabled post installing latest Agent Installer",
+        "Status": "In-Progress",
+        "DEV Owner": "K M, Arya Jayadev",
+        "Severity": "1",
+        "ETA": "20th January 2024"
+      }
+    ]
+  },
+  {
+    "Table10_columns": [
+      "Total Defects",
+      "Blocker \n(S1)",
+      "Severe\n(S2)",
+      "Moderate (S3)",
+      "Minor (S4,S5)"
+    ],
+    "Table10_data": [
+      {
+        "Total Defects": "61",
+        "Blocker \n(S1)": "16 (15/16)",
+        "Severe\n(S2)": "20 (20/20)",
+        "Moderate (S3)": "19  (19/19)",
+        "Minor (S4,S5)": "6  (6/6)"
+      }
+    ]
+  },
+  {
+    "Table11_columns": [
+      "Feature",
+      "Total Test Case",
+      "#Executed",
+      "#Pass",
+      "#Fail",
+      "Remarks"
+    ],
+    "Table11_data": [
+      {
+        "Feature": "Audit Log Report Backend",
+        "Total Test Case": "44",
+        "#Executed": "44",
+        "#Pass": "44",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Audit Log Report UI",
+        "Total Test Case": "7",
+        "#Executed": "7",
+        "#Pass": "7",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Decommission Report Backend",
+        "Total Test Case": "30",
+        "#Executed": "30",
+        "#Pass": "30",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "SPT Report UI",
+        "Total Test Case": "2",
+        "#Executed": "2",
+        "#Pass": "2",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "SPT Report Backend",
+        "Total Test Case": "17",
+        "#Executed": "15",
+        "#Pass": "15",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Commission Report Backend",
+        "Total Test Case": "15",
+        "#Executed": "15",
+        "#Pass": "15",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Commission Report UI",
+        "Total Test Case": "5",
+        "#Executed": "5",
+        "#Pass": "5",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Decommission Report UI",
+        "Total Test Case": "2",
+        "#Executed": "2",
+        "#Pass": "2",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Serial Number Report UI",
+        "Total Test Case": "4",
+        "#Executed": "4",
+        "#Pass": "4",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Serial Number Report Backend",
+        "Total Test Case": "17",
+        "#Executed": "17",
+        "#Pass": "17",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Audit Log Tableau Dashboard",
+        "Total Test Case": "7",
+        "#Executed": "7",
+        "#Pass": "7",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Lot Event details Tableau Dashboard",
+        "Total Test Case": "7",
+        "#Executed": "7",
+        "#Pass": "7",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Alarms Tableau Dashboard",
+        "Total Test Case": "8",
+        "#Executed": "8",
+        "#Pass": "8",
+        "#Fail": "",
+        "Remarks": "Completed"
+      }
+    ]
+  }
+]

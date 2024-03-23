@@ -1,0 +1,477 @@
+[
+  {
+    "Table1_columns": [
+      "PROJECT STATUS"
+    ],
+    "Table1_data": [
+      {
+        "PROJECT STATUS": "GREEN"
+      }
+    ]
+  },
+  {
+    "Table2_columns": [
+      "REPORT DATE"
+    ],
+    "Table2_data": [
+      {
+        "REPORT DATE": "9th Jan 2024"
+      }
+    ]
+  },
+  {
+    "Table3_columns": [
+      "PROJECT DESCRIPTION"
+    ],
+    "Table3_data": [
+      {
+        "PROJECT DESCRIPTION": "UniTrace cloud 9.5.0 and mobile 2.0.0 release"
+      },
+      {
+        "PROJECT DESCRIPTION": "Key highlights of Release\n"
+      },
+      {
+        "PROJECT DESCRIPTION": "SQS implementation & backend autoscaling"
+      },
+      {
+        "PROJECT DESCRIPTION": "UT Mobile - Camera & Multi-Scan & AR"
+      }
+    ]
+  },
+  {
+    "Table4_columns": [
+      "RELEASE VERSION",
+      "CURRENT STAGE",
+      "NEXT MILESTONE"
+    ],
+    "Table4_data": [
+      {
+        "RELEASE VERSION": "Cloud - 9.5.0 & Mobile 2.0.0",
+        "CURRENT STAGE": "Completed",
+        "NEXT MILESTONE": "GA Path - In Progress"
+      }
+    ]
+  },
+  {
+    "Table5_columns": [
+      "ENVIRONMENT",
+      "STATUS",
+      "PLANNED RELEASE DATE",
+      "ACTUAL RELEASE DATE"
+    ],
+    "Table5_data": [
+      {
+        "ENVIRONMENT": "DEV",
+        "STATUS": "Completed",
+        "PLANNED RELEASE DATE": "25th September 2023",
+        "ACTUAL RELEASE DATE": "15th December 2023"
+      },
+      {
+        "ENVIRONMENT": "QA",
+        "STATUS": "Completed",
+        "PLANNED RELEASE DATE": "25th September 2023",
+        "ACTUAL RELEASE DATE": "15th December 2023"
+      },
+      {
+        "ENVIRONMENT": "Regression",
+        "STATUS": "Completed",
+        "PLANNED RELEASE DATE": "TBD",
+        "ACTUAL RELEASE DATE": "20th December 2023"
+      },
+      {
+        "ENVIRONMENT": "Migration",
+        "STATUS": "Completed",
+        "PLANNED RELEASE DATE": "TBD",
+        "ACTUAL RELEASE DATE": "18th December 2023"
+      },
+      {
+        "ENVIRONMENT": "IQC",
+        "STATUS": "Completed",
+        "PLANNED RELEASE DATE": "TBD",
+        "ACTUAL RELEASE DATE": "21st December 2023"
+      },
+      {
+        "ENVIRONMENT": "RTM",
+        "STATUS": "Completed",
+        "PLANNED RELEASE DATE": "11th October 2023",
+        "ACTUAL RELEASE DATE": "22nd December 2023"
+      },
+      {
+        "ENVIRONMENT": "GA",
+        "STATUS": "In Progress",
+        "PLANNED RELEASE DATE": "18th October 2023",
+        "ACTUAL RELEASE DATE": "8th January 2024"
+      }
+    ]
+  },
+  {
+    "Table6_columns": [
+      "HIGHLIGHTS"
+    ],
+    "Table6_data": [
+      {
+        "HIGHLIGHTS": "QA completed for 10 Features"
+      },
+      {
+        "HIGHLIGHTS": "Key Highlights"
+      },
+      {
+        "HIGHLIGHTS": "SQS Implementation & backend autoscaling"
+      },
+      {
+        "HIGHLIGHTS": "UT Mobile - Camera & Multi-Scan & AR"
+      }
+    ]
+  },
+  {
+    "Table7_columns": [
+      "Feature",
+      "Status",
+      "Remarks"
+    ],
+    "Table7_data": [
+      {
+        "Feature": "Camera & Multi-Scan & AR - Business Step Camera MultiScan",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Camera & Multi-Scan & AR - AR Display",
+        "Status": "Completed",
+        "Remarks": "QA Completed\nOpen Issue : Defect Logged as MTRC-239 (Sev-3) "
+      },
+      {
+        "Feature": "Camera & Multi-Scan & AR - Barcode Encoding Selection",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Camera & Multi-Scan & AR - Item Verification Camera MultiScan",
+        "Status": "Completed",
+        "Remarks": "QA Completed\nOpen Issue : Defect Logged as MTRC-257 (Sev-4) "
+      },
+      {
+        "Feature": "\tAdd Camera View Button to Scanned Items Screen - QA",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Mobile Device Field Dropdowns - QA",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Mobile Tracing Dashboard - QA",
+        "Status": "Completed",
+        "Remarks": "QA Completed\nOpen Issue : Defect Logged as MTRC-268 (Sev-3) , TRACE-11546(Sev-3)"
+      },
+      {
+        "Feature": "Verify Upgrade from Play Store",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "\tVerify Minimum Cloud Version of 9.5.0",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Business Step Options - DB Verification Bypass",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "\tBusiness Step Options - AI Codes Parsing & Free Format",
+        "Status": "Completed",
+        "Remarks": "QA Completed\nOpen Issue : Defect Logged as MTRC-333 (Sev-3) , MTRC-306 (Sev-3)"
+      },
+      {
+        "Feature": "Job Format Routing - QA",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Inbound Shipment Notification",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "XSD Validation Handler",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "AS2 Volume Testing",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "\tHTTPS Volume Testing",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Regression Testing of MultiTenant SingleRDS Environment with SQS",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Functional Regression Testing of SQS Implementation",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "SQS test run on Multitenant Environment",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Autoscaling testing",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "Multi Tenant Single DB - functional testing",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "AS2 Transfer Handler - Add File Extension Parameter",
+        "Status": "Completed",
+        "Remarks": "QA Completed\nOpen Issue : Defect Logged as TRACE-12624 (Sev-3)"
+      }
+    ]
+  },
+  {
+    "Table8_columns": [
+      "SL#",
+      "Identified Risk",
+      "Status",
+      "Severity",
+      "Impact",
+      "Mitigation",
+      "Closure required by",
+      "Owner"
+    ],
+    "Table8_data": [
+      {
+        "SL#": "1",
+        "Identified Risk": "Migration scenario where in multi-tenant multi RDS needs to be migrated to multi-tenant single RDS was deferred from 9.5.0 and will be included in a future release",
+        "Status": "Open",
+        "Severity": "Critical",
+        "Impact": "This is a risk provided with RTM notification for 9.5.0",
+        "Mitigation": "Feature should be delivered by future release",
+        "Closure required by": "TBD",
+        "Owner": "Brian"
+      }
+    ]
+  },
+  {
+    "Table9_columns": [
+      "Feature",
+      "Jira ID",
+      "Description",
+      "Status",
+      "DEV Owner",
+      "Severity",
+      "ETA"
+    ],
+    "Table9_data": [
+      {
+        "Feature": "Mobile Tracing Dashboard - QA",
+        "Jira ID": "MTRC-268",
+        "Description": "MTRC | User is required to perform login steps on web page",
+        "Status": "Open",
+        "DEV Owner": "Sharma, Deewankshi",
+        "Severity": "3",
+        "ETA": ""
+      },
+      {
+        "Feature": "Mobile Tracing Dashboard - QA",
+        "Jira ID": "TRACE- 11546",
+        "Description": "Unitrace-qa | MTRC | Mobile responsive issue when number of quick links assigned to user is more",
+        "Status": "Open",
+        "DEV Owner": "Levy, Brian",
+        "Severity": "3",
+        "ETA": ""
+      },
+      {
+        "Feature": "\tBusiness Step Options - AI Codes Parsing & Free Format",
+        "Jira ID": "MTRC-333",
+        "Description": "MTRC | With \"Free Format\" enabled in Business Step, upon scanning and submitting the Code-128 2D Barcode, Job is getting failed with error. Also, in Receipt, item is not displayed as per the Free Format under EPC tag",
+        "Status": "Open",
+        "DEV Owner": "Levy, Brian",
+        "Severity": "3",
+        "ETA": ""
+      },
+      {
+        "Feature": "\tBusiness Step Options - AI Codes Parsing & Free Format",
+        "Jira ID": "MTRC-306",
+        "Description": "UniTrace Cloud App | On Job Queue page, Device information is not getting displayed for job executed via UniTrace Mobile App",
+        "Status": "Open",
+        "DEV Owner": "Levy, Brian",
+        "Severity": "3",
+        "ETA": ""
+      },
+      {
+        "Feature": "AS2 Transfer Handler - Add File Extension Parameter",
+        "Jira ID": "TRACE-12624",
+        "Description": "user is able to create & download file other than Supported Formats: .csv, .xml, .json, .txt, .job using inbound job API having AS2 Transfer handler job format",
+        "Status": "Open",
+        "DEV Owner": "Kumar M Nandha",
+        "Severity": "3",
+        "ETA": ""
+      }
+    ]
+  },
+  {
+    "Table10_columns": [
+      "Total Defects",
+      "Blocker \n(S1)",
+      "Severe\n(S2)",
+      "Moderate (S3)",
+      "Minor (S4,S5)"
+    ],
+    "Table10_data": [
+      {
+        "Total Defects": "78",
+        "Blocker \n(S1)": "2",
+        "Severe\n(S2)": "35",
+        "Moderate (S3)": "33",
+        "Minor (S4,S5)": "8"
+      }
+    ]
+  },
+  {
+    "Table11_columns": [
+      "Feature",
+      "Total Test Case",
+      "#Executed",
+      "#Pass",
+      "#Fail",
+      "Remarks"
+    ],
+    "Table11_data": [
+      {
+        "Feature": "Camera & Multi-Scan & AR - Barcode Encoding Selection",
+        "Total Test Case": "4",
+        "#Executed": "4",
+        "#Pass": "4",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Job Format Routing - QA",
+        "Total Test Case": "4",
+        "#Executed": "4",
+        "#Pass": "4",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Mobile VRS Dashboard - QA",
+        "Total Test Case": "6",
+        "#Executed": "6",
+        "#Pass": "6",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Mobile Tracing Dashboard - QA",
+        "Total Test Case": "4",
+        "#Executed": "4",
+        "#Pass": "1",
+        "#Fail": "3",
+        "Remarks": "Completed with Known issues MTRC-268 (Sev-3) , TRACE-11546(Sev-3)"
+      },
+      {
+        "Feature": "Camera & Multi-Scan & AR - AR Display",
+        "Total Test Case": "6",
+        "#Executed": "6",
+        "#Pass": "4",
+        "#Fail": "2",
+        "Remarks": "Completed with Known issue MTRC-239 (Sev-3) "
+      },
+      {
+        "Feature": "Camera & Multi-Scan & AR - Item Verification Camera MultiScan",
+        "Total Test Case": "11",
+        "#Executed": "11",
+        "#Pass": "10",
+        "#Fail": "1",
+        "Remarks": "Completed with Known issue MTRC-257 (Sev-4) "
+      },
+      {
+        "Feature": "Business Step Options - DB Verification Bypass",
+        "Total Test Case": "7",
+        "#Executed": "7",
+        "#Pass": "7",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Business Step Options - AI Codes Parsing & Free Format",
+        "Total Test Case": "4",
+        "#Executed": "4",
+        "#Pass": "3",
+        "#Fail": "1",
+        "Remarks": "Completed with Known issues MTRC-333 (Sev-3) , MTRC-306 (Sev-3)"
+      },
+      {
+        "Feature": "Mobile VRS - QA",
+        "Total Test Case": "14",
+        "#Executed": "14",
+        "#Pass": "14",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "\tVerify Minimum Cloud Version of 9.5.0",
+        "Total Test Case": "4",
+        "#Executed": "4",
+        "#Pass": "4",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Add Camera View Button to Scanned Items Screen - QA",
+        "Total Test Case": "3",
+        "#Executed": "3",
+        "#Pass": "3",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "UniTrace Mobile - Non Default Orientation Support - QA",
+        "Total Test Case": "1",
+        "#Executed": "1",
+        "#Pass": "1",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Inbound Shipment Notification",
+        "Total Test Case": "8",
+        "#Executed": "8",
+        "#Pass": "8",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "XSD Validation Handler",
+        "Total Test Case": "2",
+        "#Executed": "2",
+        "#Pass": "2",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "AS2 Transfer Handler - Add File Extension Parameter",
+        "Total Test Case": "1",
+        "#Executed": "1",
+        "#Pass": "1",
+        "#Fail": "",
+        "Remarks": "Completed"
+      }
+    ]
+  }
+]

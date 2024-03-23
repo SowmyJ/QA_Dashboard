@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b59a40a5.css",
+    "main.js": "/static/js/main.334d6751.js",
+    "static/media/systech-logo-new.webp": "/static/media/systech-logo-new.e664d885d3eb5618367a.webp",
+    "index.html": "/index.html",
+    "main.b59a40a5.css.map": "/static/css/main.b59a40a5.css.map",
+    "main.334d6751.js.map": "/static/js/main.334d6751.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b59a40a5.css",
+    "static/js/main.334d6751.js"
+  ]
+}

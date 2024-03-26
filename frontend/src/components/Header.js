@@ -1,13 +1,95 @@
+  import React,{useEffect} from 'react';
+  import Navbar from 'react-bootstrap/Navbar';
+  import Nav from 'react-bootstrap/Nav';
 
+const Header = ({ selectedTab, selectedSubTab, selectedSubSubTab, handleChange }) => {
+  useEffect(() => {
+    if (selectedTab) {
+      const subtabs = document.getElementById(`subtabs${selectedTab}`);
+      if (subtabs) {
+        subtabs.style.display = 'block';
+      }
+    }
+     if (selectedSubTab) {
+      const subsubtabs = document.getElementById(`subsubtabs${selectedSubTab}`);
+      if (subsubtabs) {
+        subsubtabs.style.display = 'block';
+      }
+    }
+  }, [selectedTab, selectedSubTab]);
+ 
+ 
+  const subTabsMap = {
+    tab1: ["Unisecure", "Unitrace","UniSecure-Lite","Insight","UniSeries"],
+    tab2: ["Mentor", "Partable"],
+    tab3: ["Platform", "Hydro","Civacon","Mosaic","VHSS","Genesis","MI","Rego","SCDP"],
+    tab4: ["DFS","PSG","OKI","ESG","CPC","Improseal","OPW EMEA","OPW","VSG EMEA","TWG","Destaco","MAAG","SWEP","VSG NA","DFR","Caldera","OPW CES"],
+  };
+ 
+ 
+  const subSubTabsMap = {
+    subtab1: ["DFS-EMEA","DFS-US","DFS-Canada","DFS-Brazil","DFS-Order Tracking"],
+    subtab2: ["PSG"],
+    subtab3: ["OKI-Techon","OKI-Metcal"],
+    subtab4: ["ESG"],
+    subtab5: ["CPC"],
+    subtab6: ["Improseal-US","Improseal-UK"],
+    subtab7: ["Fibrelite","Sweden","OES","Midland"],
+    subtab8: ["Civacon","RF","PDQ","VWS-PDQ","VWS-Belanger"],
+    subtab9: ["VSG-EMEA"],
+    subtab10:["TWG"],
+    subtab11: ["Destaco B2B"],
+    subtab12: ["MAAG"],
+    subtab13: ["SWEP"],
+    subtab14:["VSGNA"],
+    subtab15: ["DFR"],
+    subtab16: ["Caldera"],
+    subtab17: ["OPW CES","TBD"],
+  };
+ 
+ 
+  return (
+    <Navbar bg="light" expand="lg">
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="tabs" activeKey={selectedTab} onSelect={handleChange}>
+          <Nav.Link eventKey="tab1">Insight</Nav.Link>
+          <Nav.Link eventKey="tab2">Unisecure</Nav.Link>
+          <Nav.Link eventKey="tab3">Unitrace</Nav.Link>
+          <Nav.Link eventKey="tab4">SupplySense</Nav.Link>
+          <Nav.Link eventKey="tab5">Uploads & Archives</Nav.Link>
+        </Nav>
+        <div className="subtabMain">
+        {selectedTab && selectedTab !== "tab5" && (
+          <Nav className="subtab" activeKey={selectedSubTab} onSelect={handleChange}>
+            {subTabsMap[selectedTab].map((subTab, index) => (
+              <Nav.Link key={index} eventKey={`subtab${index + 1}`}>
+                {subTab}
+              </Nav.Link>
+            ))}
+          </Nav>
+        )}
+        {selectedSubTab && selectedTab === "tab4" && (
+          <Nav className="subsubtabs" activeKey={selectedSubSubTab} onSelect={handleChange}>
+            {subSubTabsMap[selectedSubTab].map((subSubTab, index) => (
+              <Nav.Link key={index} eventKey={`subsubtab${index + 1}`}>
+                {subSubTab}
+              </Nav.Link>
+            ))}
+          </Nav>
+        )}
+        </div>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+ };
+ 
+ 
+ export default Header;
+ 
 
-
-import React, { useEffect } from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-import '../App.css';
-import Dropdown from 'react-bootstrap/Dropdown';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
-
+ 
+ 
 
     /*<Navbar bg="light" expand="lg">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -143,72 +225,6 @@ new ones
               )}
 */
 
-
-
-
-const Header = ({ selectedTab, handleChange, selectedSubTab, handleSubTabChange }) => {
-  useEffect(() => {
-    if (selectedTab) {
-      const subtabs = document.getElementById(`subtabs${selectedTab}`);
-      if (subtabs) {
-        subtabs.style.display = 'block';
-      }
-    }
-  }, [selectedTab]);
-
-
-  return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <div className="tabs">
-          <Nav activeKey={selectedTab} onSelect={handleChange}>
-            <Nav.Link eventKey="tab1" className="tab-nav-link">Systech</Nav.Link>
-            <Nav.Link eventKey="tab2">IOT</Nav.Link>
-            <Nav.Link eventKey="tab3">Ecommerce</Nav.Link>
-            <Nav.Link eventKey="tab5">Uploads</Nav.Link>
-          </Nav>
-        </div>
-        
-        <div className="subtabs" id={`subtabs${selectedTab}`}>
-          {selectedTab === "tab1" && (
-            <Nav activeKey={selectedSubTab} onSelect={handleSubTabChange}>
-              <Nav.Link eventKey="subtab1" className="subtab-nav-link">Insight</Nav.Link>
-              <Nav.Link eventKey="subtab2" className="subtab-nav-link">Uniseries</Nav.Link>
-              <Nav.Link eventKey="subtab3" className="subtab-nav-link">Unisecure</Nav.Link>
-              <Nav.Link eventKey="subtab4" className="subtab-nav-link">SupplySense</Nav.Link>
-              <Nav.Link eventKey="subtab5" className="subtab-nav-link">Uni360</Nav.Link>
-              <Nav.Link eventKey="subtab6" className="subtab-nav-link">Rego</Nav.Link>
-              {/* Add more subtabs as needed */}
-            </Nav>
-          )}
-          {selectedTab === "tab2" && (
-            <Nav activeKey={selectedSubTab} onSelect={handleSubTabChange}>
-              <Nav.Link eventKey="subtab1" className="subtab-nav-link">Hydro</Nav.Link>
-              <Nav.Link eventKey="subtab2" className="subtab-nav-link">Civacon</Nav.Link>
-              <Nav.Link eventKey="subtab3" className="subtab-nav-link">Mosaic</Nav.Link>
-              <Nav.Link eventKey="subtab4" className="subtab-nav-link">Genesis</Nav.Link>
-              {/* Add more subtabs as needed */}
-            </Nav>
-          )}
-          {selectedTab === "tab3" && (
-            <Nav activeKey={selectedSubTab} onSelect={handleSubTabChange}>
-                <Nav.Link eventKey="subtab1" className="subtab-nav-link">Subtab 1</Nav.Link>
-              <Nav.Link eventKey="subtab2" className="subtab-nav-link">Subtab 2</Nav.Link>
-              <Nav.Link eventKey="subtab1" className="subtab-nav-link">Subtab 3</Nav.Link>
-              <Nav.Link eventKey="subtab2" className="subtab-nav-link">Subtab 4</Nav.Link>
-              {/* Add more subtabs as needed */}
-            </Nav>
-          )}
-       
-        </div>
-      </Navbar.Collapse>
-    </Navbar>
-  );
-};
-
-
-export default Header;
 
 
 

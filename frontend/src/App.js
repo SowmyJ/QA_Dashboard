@@ -1,31 +1,36 @@
-// src/App.js
-import React, { useState } from 'react';
-import { useEffect } from 'react';
-import HeaderComponent from './components/Systech';
-import Header from './components/Header.js';
-import Insight from './components/Insight';
-import Unisecure from './components/Unisecure';
-import Unitrace from './components/Unitrace.js';
-import SupplySense from './components/SupplySense.js';
-import UploadsArchives from './components/UploadsArchives.js';
-import FooterComponent from './components/Footer';
-import logo from './doverLogo.png';
-import homepageImage from './eg1.jpg';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-
-
-
-// import Table from './Table';
-const App = () => {
+ // src/App.js
+ import React, { useState } from 'react';
+ import { useEffect } from 'react';
+ import HeaderComponent from './components/Systech';
+ import Header from './components/Header.js';
+ import Insight from './components/Insight';
+ import Unisecure from './components/Unisecure';
+ import Unitrace from './components/Unitrace.js';
+ import SupplySense from './components/SupplySense.js';
+ import UploadsArchives from './components/UploadsArchives.js';
+ import FooterComponent from './components/Footer';
+ import logo from './doverLogo.png';
+ import homepageImage from './eg1.jpg';
+ 
+ 
+ import 'bootstrap/dist/css/bootstrap.min.css';
+ import './App.css';
+ 
+ 
+ 
+ 
+ 
+ 
+ // import Table from './Table';
+ const App = () => {
   // Sample data
   // useEffect(() => {
   //   document.title = 'QE Dashboard'; // Set the title dynamically
   // }, []);
   useEffect(() => {
     document.title = 'QA Dashboard'; // Set the title dynamically
-
+ 
+ 
     const link = document.querySelector("link[rel~='icon']");
     if (!link) {
       const newLink = document.createElement("link");
@@ -34,12 +39,28 @@ const App = () => {
     }
     link.href = logo; // Set the logo as the favicon
   }, []);
-  const [selectedTab, setSelectedTab] = useState('None');
-
-  const handleChange = (value) => {
-    setSelectedTab(value);
+  /*const [selectedTab, setSelectedTab] = useState('None');*/
+ 
+ 
+  const [selectedTab, setSelectedTab] = useState(null);
+  const [selectedSubTab, setSelectedSubTab] = useState(null);
+  const [selectedSubSubTab, setSelectedSubSubTab] = useState(null);
+ 
+ 
+  const handleChange = (selectedKey) => {
+    if (selectedKey.startsWith('tab')) {
+      setSelectedTab(selectedKey);
+      setSelectedSubTab(null); // Reset subtab when changing tab
+      setSelectedSubSubTab(null); // Reset subsubtab when changing tab
+    } else if (selectedKey.startsWith('subtab')) {
+      setSelectedSubTab(selectedKey);
+      setSelectedSubSubTab(null); // Reset subsubtab when changing subtab
+    } else {
+      setSelectedSubSubTab(selectedKey);
+    }
   };
-
+ 
+ 
   // Map the selected tab to its corresponding component
   const getTabComponent = (tab) => {
     switch (tab) {
@@ -57,25 +78,31 @@ const App = () => {
         return null;
     }
   };
-
+ 
+ 
   return (
-  
-     <div className="all-body-div">
-
+      <div className="all-body-div">
+ 
+ 
       <div className="body-div">
       <HeaderComponent/>
-      <Header selectedTab={selectedTab} handleChange={handleChange} />
-      <div className="background-image-div" style={{backgroundImage: selectedTab === 'None' ? homepageImage:'none'}}>
-      
+      <Header
+        selectedTab={selectedTab}
+        selectedSubTab={selectedSubTab}
+        selectedSubSubTab={selectedSubSubTab}
+        handleChange={handleChange}
+      />
+      <div className="background-image-div" style={{backgroundImage: selectedTab === null ? homepageImage:'none'}}>
+     
       {/* Render the component based on the selected tab */}
       {getTabComponent(selectedTab)}
       </div>
       </div>
       <FooterComponent/>
-      
-      </div>
-      
-    
+     
+     </div>
+     
+   
   );
 //   const [selectedTab, setSelectedTab] = useState('one');
 

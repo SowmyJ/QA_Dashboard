@@ -6,7 +6,8 @@ const getFilesInFolder = async (req, res) => {
   try {
     
     const folderName = req.params.category;
-    const folderPath = path.join(__dirname, '..', 'uploads', folderName);
+    const subFolder = req.params.subcategory;
+    const folderPath = path.join(__dirname, '..', 'uploads', folderName,subFolder);
 
     // Read the files in the specified folder
     const files = await fs.readdir(folderPath);
@@ -20,7 +21,8 @@ const getFilesInFolder = async (req, res) => {
 };
 const clearAll=async(req,res)=>{
   const folderName= req.params.folderName;
-  const directory = path.join(__dirname,'..','uploads',`${folderName}`)
+  const subFolder = req.params.subcategory;
+  const directory = path.join(__dirname,'..','uploads',`${folderName}`,subFolder)
 // app.use(express.static(directory));
   const filename=req.params.filename
     const filepath= path.join(directory,filename);

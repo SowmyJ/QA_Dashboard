@@ -1,7 +1,7 @@
-  import React,{useEffect} from 'react';
+import React,{useEffect} from 'react';
   import Navbar from 'react-bootstrap/Navbar';
   import Nav from 'react-bootstrap/Nav';
-
+ 
 const Header = ({ selectedTab, selectedSubTab, selectedSubSubTab, handleChange }) => {
   useEffect(() => {
     if (selectedTab) {
@@ -53,15 +53,15 @@ const Header = ({ selectedTab, selectedSubTab, selectedSubSubTab, handleChange }
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="tabs" activeKey={selectedTab} onSelect={handleChange}>
-          <Nav.Link eventKey="tab1">Insight</Nav.Link>
-          <Nav.Link eventKey="tab2">Unisecure</Nav.Link>
-          <Nav.Link eventKey="tab3">Unitrace</Nav.Link>
-          <Nav.Link eventKey="tab4">SupplySense</Nav.Link>
+          <Nav.Link eventKey="tab1">Systech</Nav.Link>
+          <Nav.Link eventKey="tab2">CDS</Nav.Link>
+          <Nav.Link eventKey="tab3">IOT</Nav.Link>
+          <Nav.Link eventKey="tab4">EcommerceQA</Nav.Link>
           <Nav.Link eventKey="tab5">Uploads & Archives</Nav.Link>
         </Nav>
         <div className="subtabMain">
         {selectedTab && selectedTab !== "tab5" && (
-          <Nav className="subtab" activeKey={selectedSubTab} onSelect={handleChange}>
+          <Nav className="subtabs" activeKey={selectedSubTab} onSelect={handleChange}>
             {subTabsMap[selectedTab].map((subTab, index) => (
               <Nav.Link key={index} eventKey={`subtab${index + 1}`}>
                 {subTab}
@@ -87,10 +87,10 @@ const Header = ({ selectedTab, selectedSubTab, selectedSubSubTab, handleChange }
  
  export default Header;
  
-
  
  
-
+ 
+ 
     /*<Navbar bg="light" expand="lg">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -98,7 +98,7 @@ const Header = ({ selectedTab, selectedSubTab, selectedSubSubTab, handleChange }
           <Nav.Link eventKey="tab1">Systech</Nav.Link>
           <Nav.Link eventKey="tab2">Ecommerce</Nav.Link>
           <Nav.Link eventKey="tab3">platform1</Nav.Link>
-          <Nav.Link eventKey="tab4">platform2</Nav.Link> 
+          <Nav.Link eventKey="tab4">platform2</Nav.Link>
           <Nav.Link eventKey="tab5">platform3</Nav.Link>
         </Nav>
       </Navbar.Collapse>
@@ -120,7 +120,7 @@ const Header = ({ selectedTab, selectedSubTab, selectedSubSubTab, handleChange }
            <Nav.Link eventKey="tab1">Systech</Nav.Link>
            <Nav.Link eventKey="tab2">Ecommerce</Nav.Link>
            <Nav.Link eventKey="tab3">platform1</Nav.Link>
-           <Nav.Link eventKey="tab4">platform2</Nav.Link> 
+           <Nav.Link eventKey="tab4">platform2</Nav.Link>
            <Nav.Link eventKey="tab5">platform3</Nav.Link>
            <Dropdown>
       <Dropdown.Toggle>Click to see more…</Dropdown.Toggle>
@@ -170,7 +170,7 @@ const Header = ({ selectedTab, selectedSubTab, selectedSubSubTab, handleChange }
           <div className="subtabs4">
             <Nav.Link eventKey="subtab1">Subtab 1</Nav.Link>
             <Nav.Link eventKey="subtab2">Subtab 2</Nav.Link>
-            
+           
           </div>
         )}
         </Nav.Link>
@@ -183,7 +183,7 @@ const Header = ({ selectedTab, selectedSubTab, selectedSubSubTab, handleChange }
            
           </div>
         )}
-        </Nav.Link> 
+        </Nav.Link>
           <Nav.Link eventKey="tab6">
             platform3
             {selectedTab === "tab6" && (
@@ -197,7 +197,7 @@ const Header = ({ selectedTab, selectedSubTab, selectedSubSubTab, handleChange }
     </Nav>
   </Navbar.Collapse>
 </Navbar>
-
+ 
 new ones
 <Nav.Link eventKey="tab4">platform1</Nav.Link>
             <Nav.Link eventKey="tab5">platform2</Nav.Link>
@@ -224,7 +224,3 @@ new ones
                 </Nav>
               )}
 */
-
-
-
-

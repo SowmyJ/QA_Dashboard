@@ -1,4 +1,4 @@
-const { processExcelFile, haveJson,openExcelFile, babyma } = require('../controllers/getFiles');
+const { processExcelFile, haveJson,openExcelFile, fileexp } = require('../controllers/getFiles');
 const {getFilesInFolder,clearAll} = require('../controllers/archives');
 const express = require('express')
 const multer = require('multer')
@@ -20,10 +20,10 @@ const upload = multer({
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
   });
-  app.get('/json/:category',haveJson);
-  app.post('/upload/:category/:filename', upload.single('excelFile'), processExcelFile);
-  app.get('/archives/uploads/:category',getFilesInFolder);
-  app.get('/archives/uploads/:folder/:filename',openExcelFile)
-  app.get('/file/:folderName/:filename',clearAll)
-  app.get('/data',babyma);
+  app.get('/json/:category/:subcategory',haveJson);
+  app.post('/uploads/:category/:subCategory/:filename/:IsSupplysense', upload.single('excelFile'), processExcelFile);
+  app.get('/archives/uploads/:category/:subcategory',getFilesInFolder);
+  app.get('/archives/uploads/:folder/:subFolder/:filename/:IsSupplysense',openExcelFile)
+  app.get('/file/:folderName/:subcategory',clearAll)
+  app.get('/data',fileexp);
   module.exports=app;

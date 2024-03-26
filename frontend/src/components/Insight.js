@@ -4,14 +4,14 @@ import TableStructure2 from './Tablejson2';
 import '../App.css';
 import ENV from '../environment/environment'
 
-const Insight = () => {
+const Insight = (category,subCategory) => {
   const [Data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       // console.log('sss')
-     
+     console.log(category)
       try {
-        await fetch(`${ENV.API_URL}/json/Insight`)
+        await fetch(`${ENV.API_URL}/json/${category['category']}/${subCategory['subCategory']}`)
         .then(response => response.json())
         .then(data => {
           const result=data;

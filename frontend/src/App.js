@@ -1,9 +1,9 @@
- // src/App.js
- import React, { useState } from 'react';
+import React, { useState } from 'react';
  import { useEffect } from 'react';
  import HeaderComponent from './components/Systech';
  import Header from './components/Header.js';
- import Insight from './components/Insight';
+ 
+//  import RenderData from './components/Insight';
  import Unisecure from './components/Unisecure';
  import Unitrace from './components/Unitrace.js';
  import SupplySense from './components/SupplySense.js';
@@ -15,6 +15,7 @@
  
  import 'bootstrap/dist/css/bootstrap.min.css';
  import './App.css';
+import Insight from './components/Insight';
  
  
  
@@ -65,9 +66,9 @@
   const getTabComponent = (tab) => {
     switch (tab) {
       case 'tab1':
-        return <Insight />;
+        return <Insight category={'Systech'} subcategory={'Insight'}  />;
       case 'tab2':
-        return <Unisecure />;
+        return <Insight  />;
       case 'tab3':
         return <Unitrace />;
       case 'tab4':
@@ -105,11 +106,11 @@
    
   );
 //   const [selectedTab, setSelectedTab] = useState('one');
-
+ 
 //   const handleChange = (value) => {
 //     setSelectedTab(value);
 //   };
-
+ 
 //   const getTabComponent = (tab) => {
 //     switch (tab) {
 //       case 'one':
@@ -126,34 +127,34 @@
 //         return null;
 //     }
 //   };
-
+ 
 //   return (
 //     <div className="mainbody">
 //      <HeaderComponent/>
      
-      
+     
 //       <Header selectedTab={selectedTab} handleChange={handleChange} />
-
+ 
 //       {getTabComponent(selectedTab)}
-    
+   
 //       <FooterComponent/>
-
+ 
 //   </div>
-  
+ 
  
 //   );
 };
-
+ 
 export default App;
-
-
+ 
+ 
 // // App.jsx
 // import React, { useState, useEffect } from 'react';
 // import MyComponent from './Unitrace'; // Adjust the path
-
+ 
 // const App = () => {
 //   const [data, setData] = useState(null);
-
+ 
 //   useEffect(() => {
 //     const fetchData = async () => {
 //       try {
@@ -164,16 +165,15 @@ export default App;
 //         console.error('Error fetching table data:', error);
 //       }
 //     };
-
+ 
 //     fetchData();
 //   }, []);
-
+ 
 //   return (
 //     <div>
 //       <MyComponent tableData={data} />
 //     </div>
 //   );
 // };
-
+ 
 // export default App;
-

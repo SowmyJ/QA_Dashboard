@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.b59a40a5.css",
-    "main.js": "/static/js/main.334d6751.js",
-    "static/media/systech-logo-new.webp": "/static/media/systech-logo-new.e664d885d3eb5618367a.webp",
+    "main.css": "/static/css/main.fd12f37a.css",
+    "main.js": "/static/js/main.2d2de6ff.js",
+    "static/media/eg1.jpg": "/static/media/eg1.bfb4d32cfd9f53bdbf16.jpg",
+    "static/media/doverLogo.png": "/static/media/doverLogo.cba93fa8ae59490d46b4.png",
     "index.html": "/index.html",
-    "main.b59a40a5.css.map": "/static/css/main.b59a40a5.css.map",
-    "main.334d6751.js.map": "/static/js/main.334d6751.js.map"
+    "main.fd12f37a.css.map": "/static/css/main.fd12f37a.css.map",
+    "main.2d2de6ff.js.map": "/static/js/main.2d2de6ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.b59a40a5.css",
-    "static/js/main.334d6751.js"
+    "static/css/main.fd12f37a.css",
+    "static/js/main.2d2de6ff.js"
   ]
 }

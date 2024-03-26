@@ -107,10 +107,10 @@ import dropdown_img from '../dropdown.png';
 const Archive = () => {
   const [data, setData] = useState([]);
   const [selectedFolder, setSelectedFolder] = useState(null);
-
-  const fetchData = async (folderName) => {
+  const [selectedCategory,setSelectedCategory] = useState(null);
+  const fetchData = async (folderName,categoryName) => {
     try {
-      const response = await fetch(`${ENV.API_URL}/archives/uploads/${folderName}`);
+      const response = await fetch(`${ENV.API_URL}/archives/uploads/${folderName}/${categoryName}`);
       const responseData = await response.json();
 
       if (responseData.files && Array.isArray(responseData.files)) {
@@ -143,7 +143,7 @@ const Archive = () => {
   };
 
   useEffect(() => {
-    const folders = ['Insight', 'Unisecure', 'Unitrace']; 
+    const folders = ['Systech', 'CDS', 'IOT','EcommerceQA']; 
     // SupplySense
 
     const fetchDataForAllFolders = async () => {

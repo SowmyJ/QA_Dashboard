@@ -11,7 +11,7 @@ const getFilesInFolder = async (req, res) => {
 
     // Read the files in the specified folder
     const files = await fs.readdir(folderPath);
-
+    console.log(files)
     // Send the list of files as a response
     res.json({ files });
   } catch (error) {
@@ -28,6 +28,8 @@ const clearAll=async(req,res)=>{
     const filepath= path.join(directory,filename);
     try{
         const file = await fs.readFile(filepath);
+        const folder = await fs.readdir(directory)
+        console.log(folder);
         // console.log(file)
         res.setHeader('Content-Type','application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
         res.setHeader('Content-Disposition',`attachment; filename=${filename}`)

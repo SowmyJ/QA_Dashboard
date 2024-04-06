@@ -24,6 +24,6 @@ app.get('/', (req, res) => {
   app.post('/uploads/:category/:subCategory/:filename/:IsSupplysense', upload.single('excelFile'), processExcelFile);
   app.get('/archives/uploads/:category/:subcategory',getFilesInFolder);
   app.get('/archives/uploads/:folder/:subFolder/:filename/:IsSupplysense',openExcelFile)
-  app.get('/file/:folderName/:subcategory',clearAll)
+  app.get('/file/:folderName/:subcategory/:filename',clearAll)
   app.get('/data',fileexp);
   module.exports=app;

@@ -105,15 +105,19 @@ const haveJson=async(req,res)=>{
   await fs.mkdir(folderPath, { recursive: true });
   const filePath = path.join(__dirname, '..', 'jsonfiles',`${category}`,`${subcategory}.json` );
   console.log(category)
-   
+  
   // Write JSON data to the .json file
   // await fs.writeFile(filePath, jsonString);
   const jsonData = await fs.readFile(filePath,'utf-8')
   console.log('JSON data has been stored in the .json file.');
     // If data is present in the cache, send the cached data
     res.setHeader('Access-Control-Allow-Origin','*');
+    if(jsonData!=null){
     console.log(jsonData)
-    res.json(JSON.parse(jsonData));
+    res.json(JSON.parse(jsonData));}
+    else{
+      res.status(500).send('This category doesnot have content')
+    }
     // If data is not present in the cache, send an empty response or an appropriate message
  
   }

@@ -3,21 +3,22 @@ import TableStructure1 from './Tablejson1';
 import TableStructure2 from './Tablejson2';
 import '../App.css';
 import ENV from '../environment/environment'
-
-const Insight = (category,subCategory) => {
+//Replace this with Data Fetcher
+const Insight = (res) => {
   const [Data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       // console.log('sss')
-     console.log(category)
+     console.log(res)
       try {
-        await fetch(`${ENV.API_URL}/json/${category['category']}/${subCategory['subCategory']}`)
+        await fetch(`${ENV.API_URL}/json/${res['a'][0]}/${res['a'][1]}`)
         .then(response => response.json())
         .then(data => {
           const result=data;
           // console.log(result,'ppp')
           setData(result);
         })
+        // console.log(a,b)
         .catch(error => console.error(error));
         // Replace 'https://api.example.com/tabledata' with the actual endpoint
        // const response = fetch('http://localhost:3001/json');
@@ -31,7 +32,7 @@ const Insight = (category,subCategory) => {
     };
 
     fetchData();
-  }, []);
+  }, [res]);
 
 
 

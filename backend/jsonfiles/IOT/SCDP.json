@@ -1,0 +1,337 @@
+[
+  {
+    "Table1_columns": [
+      "PROJECT STATUS"
+    ],
+    "Table1_data": [
+      {
+        "PROJECT STATUS": "YELLOW"
+      }
+    ]
+  },
+  {
+    "Table2_columns": [
+      "REPORT DATE"
+    ],
+    "Table2_data": [
+      {
+        "REPORT DATE": "29TH NOV 2023"
+      }
+    ]
+  },
+  {
+    "Table3_columns": [
+      "PROJECT DESCRIPTION"
+    ],
+    "Table3_data": [
+      {
+        "PROJECT DESCRIPTION": "GMP-Archival feature is not complete and in Implementation phase."
+      },
+      {
+        "PROJECT DESCRIPTION": "SEV2 Tickets in open status are delaying QA closure on Feature Testing. DEV ETA  for Defect Closure is 20th Oct ."
+      }
+    ]
+  },
+  {
+    "Table4_columns": [
+      "RELEASE VERSION",
+      "CURRENT STAGE",
+      "NEXT MILESTONE"
+    ],
+    "Table4_data": [
+      {
+        "RELEASE VERSION": "2.1.0",
+        "CURRENT STAGE": "In QA",
+        "NEXT MILESTONE": "Dev-QA Code Freeze 13th Oct 2023"
+      }
+    ]
+  },
+  {
+    "Table5_columns": [
+      "ENVIRONMENT",
+      "STATUS",
+      "PLANNED RELEASE DATE",
+      "ACTUAL RELEASE DATE"
+    ],
+    "Table5_data": [
+      {
+        "ENVIRONMENT": "DEV",
+        "STATUS": "InProgress",
+        "PLANNED RELEASE DATE": "3rd October 2023",
+        "ACTUAL RELEASE DATE": ""
+      },
+      {
+        "ENVIRONMENT": "QA",
+        "STATUS": "InProgress",
+        "PLANNED RELEASE DATE": "17th October 2023",
+        "ACTUAL RELEASE DATE": ""
+      },
+      {
+        "ENVIRONMENT": "Regression",
+        "STATUS": "Not Started ",
+        "PLANNED RELEASE DATE": "19th October 2023",
+        "ACTUAL RELEASE DATE": ""
+      },
+      {
+        "ENVIRONMENT": "Migration",
+        "STATUS": "Not Started ",
+        "PLANNED RELEASE DATE": "19th October 2023",
+        "ACTUAL RELEASE DATE": ""
+      },
+      {
+        "ENVIRONMENT": "IQC",
+        "STATUS": "Not Started ",
+        "PLANNED RELEASE DATE": " 20th October 2023",
+        "ACTUAL RELEASE DATE": ""
+      },
+      {
+        "ENVIRONMENT": "RTM",
+        "STATUS": "Not Started ",
+        "PLANNED RELEASE DATE": "6th November 2023",
+        "ACTUAL RELEASE DATE": ""
+      },
+      {
+        "ENVIRONMENT": "GA",
+        "STATUS": "Not Started ",
+        "PLANNED RELEASE DATE": "13th November 2023",
+        "ACTUAL RELEASE DATE": ""
+      }
+    ]
+  },
+  {
+    "Table6_columns": [
+      "HIGHLIGHTS"
+    ],
+    "Table6_data": [
+      {
+        "HIGHLIGHTS": "QA completed for 6 Feature"
+      },
+      {
+        "HIGHLIGHTS": "Software update Feature Testing closure is dependent on open Sev2 Defects."
+      },
+      {
+        "HIGHLIGHTS": "GMP-Archival QA Testing is deferred due to Dev completion.  We have been in war room and making progress on implementation."
+      }
+    ]
+  },
+  {
+    "Table7_columns": [
+      "Feature",
+      "Status",
+      "Remarks"
+    ],
+    "Table7_data": [
+      {
+        "Feature": "Diagnostic viewer",
+        "Status": "Completed",
+        "Remarks": "Guardian/ Advisor/Sentri - Completed Testing \n-      "
+      },
+      {
+        "Feature": "Uniseries real time processing - Alarms, Counters",
+        "Status": "Completed",
+        "Remarks": "Need to Retest 1 defect."
+      },
+      {
+        "Feature": "Config Alerts",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "GMP Batch Records - IOD flows\nfor Alarms/Events/Audit",
+        "Status": "Completed",
+        "Remarks": ""
+      },
+      {
+        "Feature": "GMP Data Archival",
+        "Status": "InProgress",
+        "Remarks": "In  Implementation Phase."
+      },
+      {
+        "Feature": "  All UX 2.0 work to be done                                               - Manage Assets(Software Updates)",
+        "Status": "InProgress",
+        "Remarks": "ETA : 25th Oct . QA Closure depends on Defect fix - SPHERE-9665"
+      },
+      {
+        "Feature": "  - Info center",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      },
+      {
+        "Feature": "  - Software Center",
+        "Status": "Completed",
+        "Remarks": "Major issues resolved ."
+      },
+      {
+        "Feature": "- Managed scenes",
+        "Status": "Completed",
+        "Remarks": "QA Completed"
+      }
+    ]
+  },
+  {
+    "Table8_columns": [
+      "SL#",
+      "Identified Risk",
+      "Status",
+      "Severity",
+      "Impact",
+      "Mitigation",
+      "Closure required by",
+      "Owner"
+    ],
+    "Table8_data": [
+      {
+        "SL#": "1",
+        "Identified Risk": "GMP Archival Feature ",
+        "Status": "Open",
+        "Severity": "Critical",
+        "Impact": "The risk to RTM of 2.1.0",
+        "Mitigation": "Feature should be delivered by 27th Oct 2023",
+        "Closure required by": "27th Oct 2023",
+        "Owner": "Raghu"
+      }
+    ]
+  },
+  {
+    "Table9_columns": [
+      "Feature",
+      "Jira ID",
+      "Description",
+      "Status",
+      "DEV Owner",
+      "Severity",
+      "ETA"
+    ],
+    "Table9_data": [
+      {
+        "Feature": "Software Update",
+        "Jira ID": "SPHERE-9477 ",
+        "Description": "Advanced filter on Manage Assets is not filtering nodes properly",
+        "Status": "Open",
+        "DEV Owner": "Bhite, Yogesh",
+        "Severity": "2",
+        "ETA": "20th Oct"
+      },
+      {
+        "Feature": "",
+        "Jira ID": "SPHERE-9665",
+        "Description": "Downloading of uniseries version not working in S/w Updates",
+        "Status": "Open",
+        "DEV Owner": "Bhite, Yogesh",
+        "Severity": "2",
+        "ETA": "20th Oct"
+      },
+      {
+        "Feature": "Real time Dashboard",
+        "Jira ID": "SPHERE-9610",
+        "Description": "Packed column is not displayed in Real time Dashboard",
+        "Status": "Open",
+        "DEV Owner": "Bhite, Yogesh",
+        "Severity": "2",
+        "ETA": "20th Oct"
+      }
+    ]
+  },
+  {
+    "Table10_columns": [
+      "Total Defects",
+      "Blocker \n(S1)",
+      "Severe\n(S2)",
+      "Moderate (S3)",
+      "Minor (S4,S5)"
+    ],
+    "Table10_data": [
+      {
+        "Total Defects": "37",
+        "Blocker \n(S1)": "2",
+        "Severe\n(S2)": "18",
+        "Moderate (S3)": "13",
+        "Minor (S4,S5)": "5"
+      }
+    ]
+  },
+  {
+    "Table11_columns": [
+      "Feature",
+      "Total Test Case",
+      "#Executed",
+      "#Pass",
+      "#Fail",
+      "Remarks"
+    ],
+    "Table11_data": [
+      {
+        "Feature": "Manage scenes",
+        "Total Test Case": "26",
+        "#Executed": "26",
+        "#Pass": "26",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Info center",
+        "Total Test Case": "7",
+        "#Executed": "7",
+        "#Pass": "6",
+        "#Fail": "1",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Software Center",
+        "Total Test Case": "5",
+        "#Executed": "5",
+        "#Pass": "4",
+        "#Fail": "1",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Manage Assets(Software Updates)",
+        "Total Test Case": "5",
+        "#Executed": "5",
+        "#Pass": "1",
+        "#Fail": "4",
+        "Remarks": "not completed"
+      },
+      {
+        "Feature": "Diagnostic viewer(Only Guardian Completed)",
+        "Total Test Case": "16",
+        "#Executed": "16",
+        "#Pass": "15",
+        "#Fail": "1",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Config Alerts",
+        "Total Test Case": "18",
+        "#Executed": "18",
+        "#Pass": "18",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "GMP Batch Records - IOD flows",
+        "Total Test Case": "19",
+        "#Executed": "19",
+        "#Pass": "19",
+        "#Fail": "",
+        "Remarks": "Completed"
+      },
+      {
+        "Feature": "Uniseries real time processing - Alarms",
+        "Total Test Case": "2",
+        "#Executed": "2",
+        "#Pass": "2",
+        "#Fail": "",
+        "Remarks": "Completed with Known issues SPHERE-9597"
+      },
+      {
+        "Feature": "Real time counts Packaging Dashboard_Test Design",
+        "Total Test Case": "4",
+        "#Executed": "2",
+        "#Pass": "1",
+        "#Fail": "1",
+        "Remarks": "2 Test case not applicable"
+      }
+    ]
+  }
+]
